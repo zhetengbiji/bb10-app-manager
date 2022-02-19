@@ -1,0 +1,7 @@
+{
+  "name": "bb10-app-manager",
+  "version": "1.0.0",
+  "description": "BB10 / PlayBook App Manager",
+  "main": "options.html",
+  "chromium-args": "--allow-running-insecure-content --ignore-certificate-errors"
+}

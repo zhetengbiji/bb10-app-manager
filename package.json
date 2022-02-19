@@ -1,0 +1,17 @@
+{
+  "name": "bb10-app-manager",
+  "version": "1.0.0",
+  "description": "BB10 / PlayBook App Manager",
+  "scripts": {
+    "dev": "nw src",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/nw.gui": "^0.0.21",
+    "nw": "0.60.0",
+    "nw-builder": "^3.5.7"
+  }
+}

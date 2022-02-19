@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Options - BB10 / PlayBook App Manager</title>
+  <script src="background.js"></script>
+  <script src="options.js"></script>
+  <style>
+    body,
+    input,
+    select,
+    textarea,
+    button {
+      font: 16px lucida grande, verdana, tahoma, arial, sans-serif
+    }
+
+    h2 {
+      text-shadow: 0 0 1px #667
+    }
+
+    div.img {
+      height: 86px;
+      width: 128px;
+      background: url(images/playbook.png) no-repeat 0 -21px;
+      margin: 0 24px 18px;
+      display: inline-block
+    }
+
+    ol.note,
+    div#links {
+      line-height: 2
+    }
+
+    span.footnote {
+      color: #888;
+      font-size: 13px
+    }
+
+    ol,
+    ul {
+      margin-top: 4px
+    }
+
+    ol.note {
+      font-size: 14px
+    }
+
+    .urgent {
+      background: #ff2e12;
+      color: #fff;
+      font-weight: bold
+    }
+
+    .sslnote {
+      color: #f44
+    }
+
+    input#save {
+      margin-left: 12px
+    }
+
+    a {
+      text-decoration: none;
+      color: #2f5fa1
+    }
+
+    a:visited {
+      color: #2f5fa1
+    }
+
+    a:hover,
+    a:active {
+      color: #F40
+    }
+
+    a[onclick],
+    a[title] {
+      cursor: pointer
+    }
+  </style>
+  <link rel="Shortcut Icon" href="images/playbook.png" />
+</head>
+
+<body>
+  <h2>BB10 / PlayBook App Manager Options</h2>
+  <div class=img></div>
+  <form>Device Hostnames/IPs: (BB10: Settings &raquo; About &raquo; Network &raquo; Wi-Fi or USB &raquo;
+    IPv4)<br><textarea id=hosts rows=2 cols=50 autocomplete=off></textarea><br><span class=footnote>(Multiple
+      hostnames may be separated by comma)</span><br><br><input type=submit id=save value=Save></form><br><b>Important
+    notice:</b>
+  <ol class=note>
+    <!-- <li class=sslnote>Ignore any SSL certificate error. (Click "Proceed anyway")</li> -->
+    <li>Switch to Development Mode from Security settings on the device.</li>
+    <li>The App Manager is designed for developers to test their apps. If an app cannot be installed or an installed
+      app cannot run, it has absolutely nothing to do with the App Manager. Such app is simply incompatible with the
+      BlackBerry 10 / PlayBook OS. Please consult the source of aforementioned app if it's not you.</li>
+    <li>For future access to this page, click the toolbar icon. Alternatively, you may also go to Settings &raquo;
+      Extensions &raquo; BB10 / PlayBook App Manager &raquo; Options.</li>
+  </ol>
+  <div id=links></div>
+</body>
+
+</html>
