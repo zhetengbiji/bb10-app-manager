@@ -5,7 +5,9 @@
   "main": "src/background.js",
   "scripts": {
     "dev": "electron src/background.js",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win --ia32",
+    "dist:mac": "electron-builder --mac"
   },
   "build": {
     "appId": "com.zhetengbiji.bb10.manager",
