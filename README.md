@@ -12,8 +12,8 @@ yarn
 yarn dev
 ```
 
-## build
+## export
 
 ```
-yarn build
+yarn dist
 ```
