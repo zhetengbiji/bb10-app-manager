@@ -28,7 +28,7 @@
     }
   },
   "keywords": [],
-  "author": "",
+  "author": "zhetengbiji",
   "license": "ISC",
   "devDependencies": {
     "electron": "^16.0.9",
