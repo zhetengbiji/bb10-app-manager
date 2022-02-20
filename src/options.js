@@ -14,10 +14,11 @@ function submit (event) {
   event.preventDefault()
 }
 function update () {
-  getEl("hosts").value = window.localStorage.hosts ? window.localStorage.hosts.split("|").join(", ") : ""
-  for (var html = "", hosts = window.localStorage.hosts.split("|"), index = 0, length = hosts.length; index < length; ++index) {
+  const hosts = (window.localStorage.hosts || '').split("|")
+  getEl("hosts").value = hosts.join(", ")
+  for (var html = "", index = 0, length = hosts.length; index < length; ++index) {
     if (hosts[index]) {
-      html += "<li>" + hosts[index].link("https://" + hosts[index]) + "</li>"
+      html += "<li>" + hosts[index].link("https://" + hosts[index]).replace('<a', '<a target="_blank"') + "</li>"
     }
   }
   if (html) {

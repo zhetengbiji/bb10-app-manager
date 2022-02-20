@@ -3,17 +3,17 @@
 ## init
 
 ```
-pnpm install
+yarn
 ```
 
 ## dev
 
 ```
-pnpm run dev
+yarn dev
 ```
 
 ## build
 
 ```
-pnpm run build
+yarn build
 ```

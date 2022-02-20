@@ -2,16 +2,35 @@
   "name": "bb10-app-manager",
   "version": "1.0.0",
   "description": "BB10 / PlayBook App Manager",
+  "main": "src/background.js",
   "scripts": {
-    "dev": "nw src",
-    "build": "node build.js"
+    "dev": "electron src/background.js",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.zhetengbiji.bb10-app-manager",
+    "asar": true,
+    "files": [
+      "src/**/*"
+    ],
+    "directories": {
+      "output": "./dist"
+    },
+    "mac": {
+      "identity": null,
+      "target": "dmg",
+      "icon": "icon.icns"
+    },
+    "removePackageScripts": true,
+    "electronDownload": {
+      "mirror": "https://npm.taobao.org/mirrors/electron/"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/nw.gui": "^0.0.21",
-    "nw": "0.60.0",
-    "nw-builder": "^3.5.7"
+    "electron": "^16.0.9",
+    "electron-builder": "22.9.1"
   }
 }
