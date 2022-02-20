@@ -8,7 +8,8 @@
     "dist": "electron-builder"
   },
   "build": {
-    "appId": "com.zhetengbiji.bb10-app-manager",
+    "appId": "com.zhetengbiji.bb10.manager",
+    "productName": "BB10 App Manager",
     "asar": true,
     "files": [
       "src/**/*"
