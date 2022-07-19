@@ -1,18 +1,24 @@
 # BB10 / PlayBook App Manager
 
-## init
+## For User
+
+[Download and install](https://github.com/zhetengbiji/bb10-app-manager/releases)
+
+## For Dev
+
+### init
 
 ```
 yarn
 ```
 
-## dev
+### dev
 
 ```
 yarn dev
 ```
 
-## export
+### export
 
 ```
 yarn dist
